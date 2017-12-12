@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.l-header {
+   // @include helper--fixed--center--top;
+   // z-index: $index_header;
+   background-color: $color_purple;
+   color: $color_white;
+   height: 848px;
+   .l-inner{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     height: 100%;
+     width: 100%;
+
+     .l-header__logo{
+       padding-left: $size_gutter;
+       opacity: 0.6;
+       transition: all 1s ease;
+       &:hover{
+         opacity: 1;
+       }
+     }
+
+   }
+   .l-header__container{
+     margin: 0 auto;
+     background-color: $color_white;
+     border-radius: 10px;
+     color: $color_darkgray;
+     display: flex;
+     flex-flow: row;
+     justify-content: space-around;
+     align-items: baseline;
+     position: relative;
+     bottom: -70px;
+     width: 900px;
+     box-shadow: 0 0 30px rgba(52,52,52,0.25);
+     & > div{
+       display: flex;
+       justify-content: center;
+       align-items: baseline;
+       height: 140px;
+       flex-basis: 225px;
+       padding: 0 30px;
+       flex-wrap: wrap;
+       text-align: center;
+       vertical-align: middle;
+       & > img{
+         padding-top: 35px;
+       }
+     }
+
+   }
+}

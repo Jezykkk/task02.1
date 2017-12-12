@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.c-btn {
+    cursor: pointer;
+    border: none;
+    height: $size_btn;
+    width: 180px;
+    background-color: $color_orange;
+    border: 1px solid $color_orange;
+    color: $color_white;
+    border-radius: $size_btn;
+    transition: all 1s ease;
+    margin: 20px 0;
+    &:hover{
+    background-color: $color_white;
+    color: $color_orange;
+    }
+    .c-label {
+        width: 100%;
+
+        text-align: center;
+    }
+}
