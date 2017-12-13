@@ -4,11 +4,89 @@
 .l-section {
     //
 }
+
 .l-scope{
   background-image: url("../img/left-promo.jpg");
   background-repeat: no-repeat;
   background-position: left;
+  background-size: contain;
   margin-top: 225px;
   margin-bottom: 152px;
-  height: 514px;
+  .l-inner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    height: 514px;
+    & > div{
+      padding: 25px;
+      flex-basis: 570px;
+    }
+  }
+
+}
+
+
+.l-services{
+  background-color: #f7f7f7;
+  & > .l-inner{
+    text-align: center;
+    padding: 105px 0;
+}
+  .l-services__features{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    line-height: 1.8em;
+    flex-wrap: wrap;
+    & > div{
+      background-color: $color_white;
+      flex-basis: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 15px;
+      padding: 35px;
+      height: 350px;
+      border-bottom: 3px solid $color_white;
+      &:hover{
+      border-bottom: 3px solid $color_orange;
+      box-shadow: 0 0 15px rgba(52,52,52,0.10);
+      }
+      & > img{
+        display: inline-block;
+        margin: 30px 0;
+        filter: grayscale(100%);
+      }
+      &:hover > img{
+        filter: grayscale(0);
+      }
+      & > h3{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.l-solutions{
+  background-image: url("../img/right-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  margin-top: 225px;
+  margin-bottom: 152px;
+  .l-inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 514px;
+    & > div{
+      padding: 25px;
+      flex-basis: 570px;
+    }
+  }
+
 }

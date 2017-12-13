@@ -13,11 +13,11 @@
      align-items: flex-start;
      height: 100%;
      width: 100%;
-
+     padding: 15px;
      .l-header__logo{
-       padding-left: $size_gutter;
        opacity: 0.6;
        transition: all 1s ease;
+       margin: 48px 0;
        &:hover{
          opacity: 1;
        }

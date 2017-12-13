@@ -2,5 +2,15 @@
    Footer
    ========================================================================== */
 .l-footer {
-    //
+  background-color: $color_darkblue;
+  height: 205px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color_lightgray;
+  & > div{
+    width: 200px;
+    text-align: center;
+  }
 }

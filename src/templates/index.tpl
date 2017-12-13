@@ -12,10 +12,14 @@
         {{ l_header.render() }}
         {% import "partials/layouts/scope.tpl" as l_scope %}
         {{ l_scope.render() }}
-        <footer class="l-footer" data-css-spacing="top2 tablet(top1) left5 tablet(left3)">
+        {% import "partials/layouts/services.tpl" as l_services %}
+        {{ l_services.render() }}
+        {% import "partials/layouts/solutions.tpl" as l_solutions %}
+        {{ l_solutions.render() }}
+        <footer class="l-footer">
             <div class="l-inner">
                 <p>
-                    &copy; 2016 {{ author }}
+                    &copy; 2017 All rights reserved.
                 </p>
             </div>
         </footer>
